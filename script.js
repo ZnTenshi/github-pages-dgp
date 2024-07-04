@@ -1,7 +1,7 @@
 //document.domain = "172.27.5.26";
 //console.log(window.parent.getAllAngularRootElements());
 function displayMessage (evt) {
-	const targert = document.getElementById("selected-id");
+	const target = document.getElementById("selected-id");
 	if (target) {
 		target.innerHTML = evt.data;	
 	}
