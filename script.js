@@ -38,7 +38,7 @@ function displayMessage (evt) {
 			jsonNode.innerHTML = JSON.stringify(response, null, 2);
 			
 		}		
-	}}	
+	}});	
 }
 
 if (window.addEventListener) {
