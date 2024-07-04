@@ -1,2 +1,2 @@
 alert("Alive!");
-console.log(window.getAllAngularRootElements());
+console.log(window.parent.getAllAngularRootElements());
