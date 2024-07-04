@@ -1,9 +1,7 @@
 //document.domain = "172.27.5.26";
 //console.log(window.parent.getAllAngularRootElements());
 function displayMessage (evt) {
-	var message;
-	message = "I got " + evt.data + " from " + evt.origin;
-	alert(message);
+	document.getElementById("selected-id")?.innerHTML = evt.data;	
 }
 
 if (window.addEventListener) {
@@ -14,4 +12,4 @@ else {
 	window.attachEvent("onmessage", displayMessage);
 }
 
-alert("Alive!");
+//alert("Alive!");
