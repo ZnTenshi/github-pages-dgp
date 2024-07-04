@@ -1,11 +1,8 @@
 //document.domain = "172.27.5.26";
-alert("Alive!");
 //console.log(window.parent.getAllAngularRootElements());
 function displayMessage (evt) {
 	var message;
-	if (evt.origin !== "https://robertnyman.com") {
-	  message = "I got " + evt.data + " from " + evt.origin;
-	}
+	message = "I got " + evt.data + " from " + evt.origin;
 	alert(message);
 }
 
@@ -16,3 +13,5 @@ if (window.addEventListener) {
 else {
 	window.attachEvent("onmessage", displayMessage);
 }
+
+alert("Alive!");
