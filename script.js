@@ -49,4 +49,8 @@ else {
 	window.attachEvent("onmessage", displayMessage);
 }
 
+function sendDone() {
+	window.parent.postMessage("Child id done!", "*");
+}
+
 //alert("Alive!");
